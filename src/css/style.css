@@ -111,7 +111,7 @@ nav.navbar.mwcv-navbar {
     border-bottom: 1px solid #D6D6D6;
 }
 
-.mw-top-nav .navbar {
+.mw-top-nav {
     background-color: var(--main-bg-color);
     height: 40px;
 }
@@ -136,6 +136,7 @@ nav.navbar.mwcv-navbar {
 
 .updates-section .bg-primary{
     background-color: var(--main-bg-color) !important;
+    padding: 50px 35px !important;
 }
 
 .updates-section p{
