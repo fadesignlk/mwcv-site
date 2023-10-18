@@ -144,7 +144,7 @@ nav.navbar.mwcv-navbar {
     font-size: 18px;
 }
 
-.radiant-section h2 {
+.radiant-section h2, .emp-section h2 {
     font-family: 'Raleway', sans-serif;
     /* Set the font for the heading to Raleway */
     font-size: 48px;
@@ -272,10 +272,10 @@ footer p#about, footer a.nav-link{
 
 @media (max-width: 576px) {
     .navbar-brand img{
-        width: 180 !important;
+        width: 180px !important;
     }
 
-    .hero-section h1, .radiant-section h2, #our-programs h2, #initiatives h2, .donate-section h2, #get-invlolved h2{
+    .hero-section h1, .radiant-section h2, #our-programs h2, #initiatives h2, .donate-section h2, #get-invlolved h2, .emp-section h2{
         font-size: 35px !important;
         text-align: center;
     }
@@ -285,7 +285,7 @@ footer p#about, footer a.nav-link{
         text-align: center;
     }
 
-    .radiant-section, .card-body{
+    .radiant-section, .emp-section, .card-body{
         text-align: center !important;
     }
 
@@ -294,4 +294,12 @@ footer p#about, footer a.nav-link{
     }
 
   
+    .empower-section img{
+        margin-top: 45px !important;
+
+    }
+
+    .rad-section img{
+     margin-bottom: 45px !important;   
+    }
   }
