@@ -267,3 +267,31 @@ footer p#about, footer a.nav-link{
 .bottom-footer-l i{
     color: #fff !important;
 }
+
+/* Responsiveness */
+
+@media (max-width: 576px) {
+    .navbar-brand img{
+        width: 180 !important;
+    }
+
+    .hero-section h1, .radiant-section h2, #our-programs h2, #initiatives h2, .donate-section h2, #get-invlolved h2{
+        font-size: 35px !important;
+        text-align: center;
+    }
+
+    .hero-section p, p{
+        font-size: 15px !important;
+        text-align: center;
+    }
+
+    .radiant-section, .card-body{
+        text-align: center !important;
+    }
+
+    footer p#about{
+        text-align: left !important;
+    }
+
+  
+  }
