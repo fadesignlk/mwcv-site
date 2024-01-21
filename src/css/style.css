@@ -29,6 +29,10 @@ p {
     font-weight: 400 !important;
 }
 
+.text-justify{
+    text-align: justify !important; 
+}
+
 .py-5-mwcv{
     padding: 100px 0 !important;
 }
@@ -268,7 +272,62 @@ footer p#about, footer a.nav-link{
     color: #fff !important;
 }
 
+
+/* ------------------------------------ */
+/* ABOUT PAGE */
+/* ------------------------------------ */
+.breadcrumb-section{
+    background: var(--main-bg-color);
+    color: var(--text-white);
+}
+
+.breadcrumb-section h3{
+    background: var(--main-bg-color);
+}
+
+
+.our-vision{
+    /* background-color: #EBE6E0 !important; */
+    padding: 72px 0;
+}
+
+.our-vision h2 {
+    font-family: 'Raleway', sans-serif;
+    /* Set the font for the heading to Raleway */
+    font-size: 48px;
+    /* Adjust the font size as needed */
+    font-weight: 700;
+}
+
+#overview-intro h3, #acknowledgement h3, #mission h3, #objective h3, #past-activities h3, #future-activities h3{
+    font-family: 'Raleway', sans-serif;
+    /* Set the font for the heading to Raleway */
+    font-size: 32px;
+    /* Adjust the font size as needed */
+    font-weight: 700;
+    color: #1C3E38;
+}
+
+#overview-intro h3, #acknowledgement h4, #mission h3{
+    font-family: 'Raleway', sans-serif;
+    /* Set the font for the heading to Raleway */
+    /* Adjust the font size as needed */
+    font-weight: 700;
+    color: #1C3E38;
+}
+
+.dropdown-menu li a.dropdown-item:active{
+    background: var(--main-bg-color);
+}
+
+#objective ul li, #past-activities ul li, #future-activities ul li{
+    font-family: 'Lexend';
+    margin-bottom: 16px;
+}
+
+/* ------------------------------------ */
 /* Responsiveness */
+/* ------------------------------------ */
 
 @media (max-width: 576px) {
     .navbar-brand img{
