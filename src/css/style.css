@@ -387,4 +387,14 @@ footer p#about, footer a.nav-link{
     section p{
         text-align: justify;
     }
+
+    section h3{
+        font-size: 28px !important;
+        text-align: center;
+    }    
+
+    .our-vision p {
+        font-size: 20px !important;
+        text-align: center;
+    }
   }
