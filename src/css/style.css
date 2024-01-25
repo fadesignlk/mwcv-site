@@ -29,6 +29,11 @@ p {
     font-weight: 400 !important;
 }
 
+.filled-img{
+    object-fit: cover !important;
+    height: 100% !important;
+}
+
 .text-justify{
     text-align: justify !important; 
 }
@@ -377,5 +382,9 @@ footer p#about, footer a.nav-link{
 
     .mw-top-nav .container .nav-social, .mw-top-nav .container .nav-contact{
         justify-content: center !important;
+    }
+
+    section p{
+        text-align: justify;
     }
   }
