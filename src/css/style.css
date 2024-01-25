@@ -29,6 +29,15 @@ p {
     font-weight: 400 !important;
 }
 
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    /* border: none !important; */
+    box-shadow: none !important;
+}
+
 .filled-img{
     object-fit: cover !important;
     height: 100% !important;
