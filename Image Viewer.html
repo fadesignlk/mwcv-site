@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Image Gallery</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://placekitten.com/300/200" class="img-fluid img-thumbnail" data-toggle="modal"
+                    data-target="#imageModal" data-src="https://placekitten.com/600/400" alt="Image 1">
+            </div>
+            <!-- Add more images with the same structure -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg border-0" role="document">
+                    <img src="" class="img-fluid" id="modalImage" alt="Modal Image">
+                </div>
+            </div>
+            <!-- End Modal -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.img-thumbnail').click(function () {
+                var imgSrc = $(this).data('src');
+                $('#modalImage').attr('src', imgSrc);
+            });
+        });
+    </script>
+</body>
+
+</html>

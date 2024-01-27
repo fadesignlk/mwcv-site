@@ -338,7 +338,7 @@ footer p#about, footer a.nav-link{
     font-weight: 700;
 }
 
-#overview-intro h3, #acknowledgement h3, #mission h3, #objective h3, #past-activities h3, #future-activities h3{
+#overview-intro h3, #acknowledgement h3, #mission h3, #objective h3, #past-activities h3, #future-activities h3, #contact-us h3{
     font-family: 'Raleway', sans-serif;
     /* Set the font for the heading to Raleway */
     font-size: 32px;
@@ -347,7 +347,7 @@ footer p#about, footer a.nav-link{
     color: #1C3E38;
 }
 
-#overview-intro h3, #acknowledgement h4, #mission h3{
+#overview-intro h3, #acknowledgement h4, #mission h3, #contact-us h4{
     font-family: 'Raleway', sans-serif;
     /* Set the font for the heading to Raleway */
     /* Adjust the font size as needed */
@@ -362,6 +362,20 @@ footer p#about, footer a.nav-link{
 #objective ul li, #past-activities ul li, #future-activities ul li{
     font-family: 'Lexend';
     margin-bottom: 16px;
+}
+
+#contact-us h4{
+    margin-top: 28px !important;
+}
+
+section#contact-us ul{
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+section#contact-us ul > *{
+    margin-bottom: 12px;
+    font-family: 'Lexend';
 }
 
 /* ------------------------------------ */
