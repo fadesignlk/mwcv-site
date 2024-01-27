@@ -241,15 +241,15 @@ nav.navbar.mwcv-navbar {
 }
 
 .card-gr{
-    background-color: #DEFEEF !important;
+    background-color: transparent !important;
 }
 
 .card-yl{
-    background-color: #FFEEDC !important;
+    background-color: var(--text-white) !important;
 }
 
 .card-bl{
-    background-color: #BCE6FE !important;
+    background-color: transparent !important;
 }
 
 .icon-fs-1{
@@ -270,6 +270,7 @@ footer h5{
 footer p#about, footer a.nav-link{
     color: #696969 !important;
     font-size: 15px !important;
+    text-align: justify;
 }
 
 .bottom-footer-l {
@@ -348,13 +349,13 @@ footer p#about, footer a.nav-link{
         width: 180px !important;
     }
 
-    .hero-section h1, .radiant-section h2, #our-programs h2, #initiatives h2, .donate-section h2, #get-invlolved h2, .emp-section h2{
-        font-size: 35px !important;
+    .hero-section h1, .radiant-section h2, #our-programs h2, #initiatives h2, #get-invlolved h2, .emp-section h2{
+        font-size: 28px !important;
         text-align: center;
     }
 
-    .hero-section p, p{
-        font-size: 15px !important;
+    .hero-section p, p, #our-programs p{
+        font-size: 16px !important;
         text-align: center;
     }
 
@@ -362,11 +363,7 @@ footer p#about, footer a.nav-link{
         text-align: center !important;
     }
 
-    footer p#about{
-        text-align: left !important;
-    }
-
-  
+ 
     .empower-section img{
         margin-top: 45px !important;
 
@@ -397,13 +394,47 @@ footer p#about, footer a.nav-link{
         text-align: justify;
     }
 
+    section .card p{
+        text-align: center;
+    }
+
     section h3{
         font-size: 28px !important;
         text-align: center;
     }    
 
-    .our-vision p {
+    .our-vision p, .donate-section p, section#initiatives p{
         font-size: 20px !important;
         text-align: center;
     }
+
+    .empower-section, #our-programs{
+        padding: 45px 0;
+    }
+
+    .btn{
+        border-radius: 6px !important;
+        padding: 9px 16px !important;
+    }
+
+    .updates-section .bg-primary{
+        background-color: var(--main-bg-color) !important;
+        padding: 23px 25px !important;
+    }
+    
+    .updates-section p{
+        color: var(--text-white);
+        font-size: 18px;
+    }
+
+    .donate-section h2{
+        font-size: 43px;
+    }
+
+    .donate-section{
+        /* background-color: #EBE6E0 !important; */
+        padding: 80px 0;
+    }
+    
+
   }
