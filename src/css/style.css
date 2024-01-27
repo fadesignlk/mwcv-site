@@ -5,7 +5,9 @@
 
 :root {
     --main-bg-color: #1C3E38;
+    --main-bg-color-tp: rgba(28, 62, 56, 0.8);
     --secondary-bg-color: #F2AC0E;
+    --secondary-bg-color-tp: rgba(255, 197, 62, 0.8);
     --text-white: #fff;
     --font-family: 'Raleway', sans-serif;
     --font-size-heading: 2.5rem;
@@ -37,7 +39,7 @@ p {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: var(--secondary-bg-color); /* Set a background color */
+    background-color: var(--secondary-bg-color-tp); /* Set a background color */
     color: #000; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 13px 16px; /* Some padding */
@@ -47,7 +49,7 @@ p {
   }
   
   #myBtn:hover {
-    background-color:var(--main-bg-color); /* Add a dark-grey background on hover */
+    background-color:var(--main-bg-color-tp); /* Add a dark-grey background on hover */
     color: var(--text-white);
   }
 
