@@ -15,6 +15,15 @@
     --font-weight-heading: 800;
 }
 
+.three-line-text {
+    white-space: normal; /* Allow line breaks but respect word boundaries */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Add ellipsis (...) for truncation */
+    display: -webkit-box;  /* Enable line-clamp for Webkit browsers */
+    -webkit-line-clamp: 3;  /* Set the desired number of lines (3 in this case) */
+    -webkit-box-orient: vertical; /* Display text vertically */
+}
+
 body {
     background-color: #F2F2EA !important;
 }
