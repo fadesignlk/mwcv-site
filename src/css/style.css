@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+/* 3ac8b2, 0d6a62 - logo color OLD - 1C3E38*/
 :root {
-    --main-bg-color: #1C3E38;
+    --main-bg-color: #0d6a62;
     --main-bg-color-tp: rgba(28, 62, 56, 0.8);
     --secondary-bg-color: #F2AC0E;
     --secondary-bg-color-tp: rgba(255, 197, 62, 0.8);
@@ -173,7 +173,7 @@ nav.navbar.mwcv-navbar {
     font-size: 70px;
     /* Adjust the font size as needed */
     font-weight: 800;
-    color: #1C3E38;
+    color: var(--main-bg-color);
 }
 
 .hero-section p {
@@ -195,18 +195,28 @@ nav.navbar.mwcv-navbar {
     font-size: 18px;
 }
 
-.radiant-section h2, .emp-section h2 {
+.radiant-section h2, .emp-section h2, .home-vision h2, #mission-statement h2 {
     font-family: 'Raleway', sans-serif;
     /* Set the font for the heading to Raleway */
     font-size: 48px;
     /* Adjust the font size as needed */
     font-weight: 700;
-    color: #1C3E38;
+    color: var(--main-bg-color);
 }
 
 .empower-section{
     background-color: #EBE6E0 !important;
     padding: 90px 0;
+}
+
+.hm-vision{
+    background-color: #ffffff !important;
+    padding: 90px 0;
+}
+
+ul.mis-statment-list{
+    font-size: 18px !important;
+    font-family: 'Playfair Display', serif;
 }
 
 #our-programs .card-body h5, #initiatives .card-body h5, #get-invlolved .card-body h5{
@@ -215,7 +225,7 @@ nav.navbar.mwcv-navbar {
     font-size: 20px !important;
     /* Adjust the font size as needed */
     font-weight: 700 !important;
-    color: #1C3E38 !important;
+    color: var(--main-bg-color) !important;
 }
 
 #our-programs p.card-text, #initiatives p.card-text, #get-invlolved p.card-text{
@@ -238,7 +248,7 @@ nav.navbar.mwcv-navbar {
     font-size: 48px;
     /* Adjust the font size as needed */
     font-weight: 700;
-    color: #1C3E38;
+    color: var(--main-bg-color);
 }
 
 #our-programs{
@@ -257,7 +267,7 @@ nav.navbar.mwcv-navbar {
     font-size: 48px;
     /* Adjust the font size as needed */
     font-weight: 700;
-    color: #1C3E38;
+    color: var(--main-bg-color);
 }
 
 .donate-section{
@@ -353,7 +363,7 @@ footer p#about, footer a.nav-link{
     font-size: 32px;
     /* Adjust the font size as needed */
     font-weight: 700;
-    color: #1C3E38;
+    color: var(--main-bg-color);
 }
 
 #overview-intro h3, #acknowledgement h4, #mission h3, #contact-us h4{
@@ -361,7 +371,7 @@ footer p#about, footer a.nav-link{
     /* Set the font for the heading to Raleway */
     /* Adjust the font size as needed */
     font-weight: 700;
-    color: #1C3E38;
+    color: var(--main-bg-color);
 }
 
 .dropdown-menu li a.dropdown-item:active{
@@ -393,10 +403,10 @@ section#contact-us ul > *{
 
 @media (max-width: 576px) {
     .navbar-brand img{
-        width: 180px !important;
+        width: 70px !important;
     }
 
-    .hero-section h1, .radiant-section h2, #our-programs h2, #initiatives h2, #get-invlolved h2, .emp-section h2{
+    .hero-section h1, .radiant-section h2, #our-programs h2, #initiatives h2, #get-invlolved h2, .emp-section h2, .home-vision h2, #mission-statement h2{
         font-size: 28px !important;
         text-align: center;
     }
@@ -406,7 +416,7 @@ section#contact-us ul > *{
         text-align: center;
     }
 
-    .radiant-section, .emp-section, .card-body{
+    .radiant-section, .emp-section, .card-body, .home-vision{
         text-align: center !important;
     }
 
