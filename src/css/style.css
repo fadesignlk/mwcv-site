@@ -316,6 +316,7 @@ footer p#about, footer a.nav-link{
     text-align: justify;
 }
 
+
 .bottom-footer-l {
     background-color: var(--main-bg-color) !important;
     color: #fff !important;
@@ -396,6 +397,8 @@ section#contact-us ul > *{
     margin-bottom: 12px;
     font-family: 'Lexend';
 }
+
+
 
 /* ------------------------------------ */
 /* Responsiveness */
