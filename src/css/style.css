@@ -65,6 +65,10 @@ button.accordion-button:not(.collapsed){
     box-shadow : none !important;
 }
 
+p#news-card {
+    font-weight: 500 !important;
+}
+
 .video-container {
     width: 100%; /* or any specific width like 800px */
     height: 100%; /* or any specific height like 450px */
@@ -298,12 +302,12 @@ ul.mis-statment-list{
     padding: 90px 0;
 }
 
-#initiatives .card{
+#initiatives .card, #news .card{
     border: none !important;
     background-color: transparent !important;
 }
 
-#initiatives h2, #get-invlolved h2 {
+#initiatives h2, #get-invlolved h2, #news h2 {
     font-family: 'Raleway', sans-serif;
     /* Set the font for the heading to Raleway */
     font-size: 48px;
@@ -456,7 +460,7 @@ section#contact-us ul > *{
         text-align: center;
     }
 
-    .radiant-section h2, #our-programs h2, #initiatives h2, #get-invlolved h2, .emp-section h2, .home-vision h2, #mission-statement h2{
+    .radiant-section h2, #our-programs h2, #initiatives h2, #get-invlolved h2, .emp-section h2, .home-vision h2, #mission-statement h2, #news h2{
         font-size: 28px !important;
         text-align: center;
     }
@@ -514,7 +518,7 @@ section#contact-us ul > *{
         text-align: center;
     }    
 
-    .our-vision p, .donate-section p, section#initiatives p{
+    .our-vision p, .donate-section p, section#initiatives p, section#news p{
         font-size: 20px !important;
         text-align: center;
     }
