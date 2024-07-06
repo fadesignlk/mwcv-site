@@ -98,22 +98,22 @@
                 </div>
 
                 <div class="col-md-8">
-                    <form class="p-4">
+                    <form class="p-4" method="post" name="volunteer-register">
                         <div class="mb-3">
-                            <label for="fullname" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="fullname" required>
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" class="form-control" id="email" name="email" required>
                         </div>
                         <div class="mb-3">
-                            <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phone" required>
+                            <label for="phone" class="form-label" >Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
                         </div>
                         <div class="mb-3">
-                            <label for="comments" class="form-label">Why you want to join us ?</label>
-                            <textarea class="form-control" id="comments" rows="3"></textarea>
+                            <label for="message" class="form-label" >Why you want to join us ?</label>
+                            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-submit">Submit</button>
                     </form>
