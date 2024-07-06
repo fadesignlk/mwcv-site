@@ -10,6 +10,7 @@
     --secondary-bg-color: #F2AC0E;
     --secondary-bg-color-tp: rgba(255, 197, 62, 0.8);
     --third-bg-color: #53C7B2;
+    --grey: #e4e4e4;
     --text-white: #fff;
     --font-family: 'Roboto', sans-serif;
     --font-size-heading: 2.5rem;
@@ -105,7 +106,28 @@ p#news-card {
   
   #myBtn:hover {
     background-color:var(--main-bg-color-tp); /* Add a dark-grey background on hover */
-    color: var(--text-white);
+    color: var(--grey);
+  }
+
+  form{
+    background: var(--text-white);
+    border-radius: 0.5rem;
+  }
+
+
+  form > button.btn-submit {
+    background: var(--main-bg-color);
+    border: none;
+  }
+
+  form > button.btn-submit:hover {
+    background: var(--third-bg-color);
+    border: none;
+  }
+
+  form > input:focus{
+    color: none;
+    border: none;
   }
 
 .navbar-toggler,
