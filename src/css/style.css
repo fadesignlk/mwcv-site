@@ -426,7 +426,7 @@ footer p#about, footer a.nav-link{
     font-weight: 700;
 }
 
-#overview-intro h3, #acknowledgement h3, #mission h3, #objective h3, #past-activities h3, #future-activities h3, #contact-us h3{
+#overview-intro h3, #acknowledgement h3, #mission h3, #objective h3, #past-activities h3, #future-activities h3, #contact-us h3, #donate h3{
     font-family: 'Raleway', sans-serif;
     /* Set the font for the heading to Raleway */
     font-size: 32px;
@@ -435,12 +435,17 @@ footer p#about, footer a.nav-link{
     color: var(--main-bg-color);
 }
 
-#overview-intro h3, #acknowledgement h4, #mission h3, #contact-us h4{
+#overview-intro h3, #acknowledgement h4, #mission h3, #contact-us h4, #donate h4{
     font-family: 'Raleway', sans-serif;
     /* Set the font for the heading to Raleway */
     /* Adjust the font size as needed */
     font-weight: 700;
     color: var(--main-bg-color);
+}
+
+#donate h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
 }
 
 .dropdown-menu li a.dropdown-item:active{
@@ -456,12 +461,12 @@ footer p#about, footer a.nav-link{
     margin-top: 28px !important;
 }
 
-section#contact-us ul{
+section#contact-us ul, #donate ul{
     list-style: none;
     padding-inline-start: 0;
 }
 
-section#contact-us ul > *{
+section#contact-us ul > *, #donate ul > *{
     margin-bottom: 12px;
     font-family: 'Lexend';
 }
@@ -574,6 +579,10 @@ section#contact-us ul > *{
     }
 
     ul.mis-statment-list > li{
+        font-size: 16px !important;
+    }
+
+    #donate ul > li{
         font-size: 16px !important;
     }
     
