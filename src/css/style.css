@@ -49,6 +49,15 @@ ul, li {
     font-weight: 300 !important;
 }
 
+#donate ul, li {
+    font-size: 18px !important;
+}
+
+#donate .card-header{
+    font-size: 19px !important;
+    font-weight: 600 !important;
+}
+
 button.accordion-button{
     font-size: 18px !important;
 }
@@ -499,6 +508,10 @@ section#contact-us ul > *, #donate ul > *{
 
     .radiant-section, .emp-section, .card-body, .home-vision{
         text-align: center !important;
+    }
+
+    #donate .card-body{
+        text-align: left !important;
     }
 
     .emp-section, .emp-section-img{
