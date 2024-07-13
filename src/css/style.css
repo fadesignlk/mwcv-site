@@ -49,7 +49,7 @@ ul, li {
     font-weight: 300 !important;
 }
 
-#donate ul, li {
+#donate ul, #donate li {
     font-size: 18px !important;
 }
 
@@ -593,12 +593,15 @@ section#contact-us ul > *, #donate ul > *{
 
     ul.mis-statment-list > li{
         font-size: 16px !important;
+        margin-bottom: 16px;
     }
 
     #donate ul > li{
         font-size: 16px !important;
     }
     
-    
+    #location-map {
+        height: 350px !important;
+    }
 
   }
