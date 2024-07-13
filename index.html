@@ -12,6 +12,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            fetchData();
+        });
+
+        async function fetchData() {
+            try {
+                const response = await fetch('https://script.google.com/macros/s/AKfycbwCskHlR8xOc9LF_9KN6LcArqZgaTfCawgnFC9dZ2dbHg8BJRHAeD6YnUgtaTX7YF-o/exec'); // Replace with your API endpoint
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                const data = await response.json();
+                document.getElementById('contentText').innerText = data.content;
+                document.getElementById('contentImage').src = data.imageLocation;
+                document.getElementById('contentImage2').src = data.imageLocation2;
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                document.getElementById('contentText').innerText = 'Error fetching data';
+            }
+        }
+    </script>
+
 </head>
 
 <body>
@@ -118,10 +140,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="src/img/home/updates/1.jpg" class="img-fluid animate__animated animate__fadeInLeft" alt="Image 1">
+                <img id="contentImage" src="src/img/home/updates/1.jpg" class="img-fluid animate__animated animate__fadeInLeft" alt="Image 1">
             </div>
             <div class="col-md-6">
-                <img src="src/img/home/updates/2.jpg" class="img-fluid animate__animated animate__fadeInRight" alt="Image 1">
+                <img id="contentImage2" src="src/img/home/updates/2.jpg" class="img-fluid animate__animated animate__fadeInRight" alt="Image 1">
             </div>
         </div>
     </div>
@@ -132,8 +154,8 @@
                 <!-- Centered Column with Background -->
                 <div class="bg-primary text-center ">
                     <a class="btn btn-success donate-btn-yl-r mb-md-4 mb-2">Latest Updates!</a>
-                    <p class="mt-2">
-                        This month's event on wills and inheritance, presented by Sheikh Abdul Rahman Mohamed Saleh, a Lecturer in Law at Victoria University, explored both Western and Islamic perspectives. The audience engaged actively with insightful questions and friendly conversations. The event also featured delightful snacks and tea, fostering new connections among attendees.
+                    <p class="mt-2" id="contentText">
+                    
                     </p>
                 </div>
             </div>
@@ -631,6 +653,8 @@
             once: true, // Whether animation should happen only once - while scrolling down
         });
     </script>
+
+    
 </body>
 
 </html>
