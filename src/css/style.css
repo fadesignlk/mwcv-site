@@ -49,6 +49,11 @@ ul, li {
     font-weight: 300 !important;
 }
 
+.card-img-top {
+    height: 400px; /* Set the desired fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+
 #donate ul, #donate li {
     font-size: 18px !important;
 }
