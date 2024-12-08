@@ -493,7 +493,7 @@ section#contact-us ul > *, #donate ul > *{
 
 @media (max-width: 576px) {
     .navbar-brand img{
-        width: 58px !important;
+        width: 300px !important;
     }
 
     .hero-section h1{
